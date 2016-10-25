@@ -9,6 +9,7 @@ struct Business {
     let name: String
     let phone: String
     let rating: String
+    let dollars: String
     
     static func parse(data: Any) -> [Business] {
         return JSON(data)["businesses"].arrayValue.map { Business(json: $0) }
@@ -22,5 +23,6 @@ struct Business {
         self.name = json["name"].stringValue
         self.phone = json["phone"].stringValue
         self.rating = json["rating"].stringValue
+        self.dollars = json["price"].stringValue
     }
 }

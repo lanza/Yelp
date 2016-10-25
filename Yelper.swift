@@ -30,16 +30,18 @@ class Yelper {
     let base = "https://api.yelp.com/v3/businesses/search"
     var headers: HTTPHeaders { return ["Authorization":"Bearer \(accessToken.value)"] }
     
-    func get(parameters: [String:String], location: CLLocation, completion: @escaping ([Business]?) -> ()) {
+    func get(parameters: [String:Any], offset: Int, location: CLLocation, completion: @escaping ([Business]?) -> ()) {
         accessToken.asObservable().subscribe(onNext: { accessToken in
             guard accessToken != "" else { return }
             var parameters = parameters
             parameters["latitude"] = String(location.coordinate.latitude)
             parameters["longitude"] = String(location.coordinate.longitude)
+            parameters["offset"] = String(offset)
             Alamofire.request(self.base, parameters: parameters, headers: self.headers).responseJSON { resonse in
                 guard let data = resonse.result.value else {
                     return completion(nil)
                 }
+                print(data)
                 let businesses = Business.parse(data: data)
                 completion(businesses)
             }

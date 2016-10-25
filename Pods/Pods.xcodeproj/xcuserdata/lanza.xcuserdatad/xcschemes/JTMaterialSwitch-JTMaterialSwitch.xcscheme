@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "903A108934E1A089B76F443DC34C8E54"
-               BuildableName = "EZLoadingActivity.framework"
-               BlueprintName = "EZLoadingActivity"
+               BlueprintIdentifier = "35B617F8B0851DCDF666A4909092E791"
+               BuildableName = "JTMaterialSwitch.bundle"
+               BlueprintName = "JTMaterialSwitch-JTMaterialSwitch"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "903A108934E1A089B76F443DC34C8E54"
-            BuildableName = "EZLoadingActivity.framework"
-            BlueprintName = "EZLoadingActivity"
+            BlueprintIdentifier = "35B617F8B0851DCDF666A4909092E791"
+            BuildableName = "JTMaterialSwitch.bundle"
+            BlueprintName = "JTMaterialSwitch-JTMaterialSwitch"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

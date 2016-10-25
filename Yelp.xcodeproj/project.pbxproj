@@ -17,10 +17,13 @@
 		B356F3731DBD9ADC002075EB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356F3721DBD9ADC002075EB /* MainCoordinator.swift */; };
 		B3B4F04F1DBD629E00644AF9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4F04D1DBD629E00644AF9 /* Coordinator.swift */; };
 		B3B4F0501DBD629E00644AF9 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4F04E1DBD629E00644AF9 /* NavigationCoordinator.swift */; };
-		B3B4F0521DBD64DA00644AF9 /* YelpNavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4F0511DBD64DA00644AF9 /* YelpNavigationCoordinator.swift */; };
+		B3B4F0521DBD64DA00644AF9 /* YelpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B4F0511DBD64DA00644AF9 /* YelpCoordinator.swift */; };
 		B3C971981DBDA08500F0AF0D /* FilterTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C971971DBDA08500F0AF0D /* FilterTVC.swift */; };
 		B3C9719A1DBDA0CA00F0AF0D /* FilterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C971991DBDA0CA00F0AF0D /* FilterCoordinator.swift */; };
 		B3C9719E1DBDA12B00F0AF0D /* Yelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9719D1DBDA12B00F0AF0D /* Yelper.swift */; };
+		B3FAC3671DBEB00400686AC8 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FAC3661DBEB00400686AC8 /* Filters.swift */; };
+		B3FAC3691DBEB01F00686AC8 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FAC3681DBEB01F00686AC8 /* FilterCell.swift */; };
+		B3FAC36B1DBEF30900686AC8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FAC36A1DBEF30900686AC8 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +39,13 @@
 		B356F3721DBD9ADC002075EB /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		B3B4F04D1DBD629E00644AF9 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B3B4F04E1DBD629E00644AF9 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
-		B3B4F0511DBD64DA00644AF9 /* YelpNavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpNavigationCoordinator.swift; sourceTree = "<group>"; };
+		B3B4F0511DBD64DA00644AF9 /* YelpCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpCoordinator.swift; sourceTree = "<group>"; };
 		B3C971971DBDA08500F0AF0D /* FilterTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTVC.swift; sourceTree = "<group>"; };
 		B3C971991DBDA0CA00F0AF0D /* FilterCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCoordinator.swift; sourceTree = "<group>"; };
 		B3C9719D1DBDA12B00F0AF0D /* Yelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yelper.swift; sourceTree = "<group>"; };
+		B3FAC3661DBEB00400686AC8 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		B3FAC3681DBEB01F00686AC8 /* FilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		B3FAC36A1DBEF30900686AC8 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B90A087389D77AFC05C4CFFB /* Pods_Yelp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yelp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DA6392E9A786F07BF3F27F /* Pods-Yelp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yelp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yelp/Pods-Yelp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				B30719BE1DBDEAE6002B57CB /* YelpCell.swift */,
+				B3FAC3681DBEB01F00686AC8 /* FilterCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -144,7 +151,8 @@
 		B3C9719C1DBDA0F600F0AF0D /* App */ = {
 			isa = PBXGroup;
 			children = (
-				B3B4F0511DBD64DA00644AF9 /* YelpNavigationCoordinator.swift */,
+				B3B4F0511DBD64DA00644AF9 /* YelpCoordinator.swift */,
+				B3FAC36A1DBEF30900686AC8 /* Theme.swift */,
 				B356F3721DBD9ADC002075EB /* MainCoordinator.swift */,
 				B3C971991DBDA0CA00F0AF0D /* FilterCoordinator.swift */,
 			);
@@ -156,6 +164,7 @@
 			children = (
 				B3C9719D1DBDA12B00F0AF0D /* Yelper.swift */,
 				B30719C11DBDEB16002B57CB /* Business.swift */,
+				B3FAC3661DBEB00400686AC8 /* Filters.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -287,13 +296,16 @@
 				B31048A01DBD579C00C5E09F /* MainCVC.swift in Sources */,
 				B356F3731DBD9ADC002075EB /* MainCoordinator.swift in Sources */,
 				B30719BF1DBDEAE6002B57CB /* YelpCell.swift in Sources */,
-				B3B4F0521DBD64DA00644AF9 /* YelpNavigationCoordinator.swift in Sources */,
+				B3B4F0521DBD64DA00644AF9 /* YelpCoordinator.swift in Sources */,
+				B3FAC3691DBEB01F00686AC8 /* FilterCell.swift in Sources */,
 				B3C9719A1DBDA0CA00F0AF0D /* FilterCoordinator.swift in Sources */,
 				B310489E1DBD579C00C5E09F /* AppDelegate.swift in Sources */,
 				B3C9719E1DBDA12B00F0AF0D /* Yelper.swift in Sources */,
 				B30719C21DBDEB16002B57CB /* Business.swift in Sources */,
+				B3FAC3671DBEB00400686AC8 /* Filters.swift in Sources */,
 				B3B4F0501DBD629E00644AF9 /* NavigationCoordinator.swift in Sources */,
 				B3B4F04F1DBD629E00644AF9 /* Coordinator.swift in Sources */,
+				B3FAC36B1DBEF30900686AC8 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

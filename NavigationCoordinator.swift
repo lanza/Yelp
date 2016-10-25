@@ -24,18 +24,27 @@ class NavigationCoordinator: Coordinator {
     var visibleCoordinator: Coordinator? { return coordinators.last }
     var coordinators = [Coordinator]()
     func setCoordinators(_ coordinators: [Coordinator], animated: Bool) {
+        for i in 1..<(coordinators.count) {
+            coordinators[i].parentCoordinator = coordinators[i-1]
+        }
+        if let first = coordinators.first {
+            first.parentCoordinator = self
+        }
         let vcs = coordinators.map { $0.viewController! }
         navigationController.setViewControllers(vcs, animated: animated)
     }
     
     // Pushing and Popping Stack Items
     func pushCoordinator(_ coordinator: Coordinator, animated: Bool) {
+        coordinator.parentCoordinator = coordinators.last
         navigationController.pushViewController(coordinator.viewController, animated: true)
     }
     func popCoordinator(animated: Bool) -> Coordinator? {
+        navigationController.popViewController(animated: true)
         return coordinators.popLast()
     }
     func popToRootCoordinator(animated: Bool) -> [Coordinator]? {
+        _ = navigationController.popToRootViewController(animated: animated)
         let last = Array(coordinators.suffix(from: 1))
         coordinators = [coordinators[0]]
         return last

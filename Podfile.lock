@@ -5,6 +5,7 @@ PODS:
   - AlamofireNetworkActivityIndicator (2.0.1):
     - Alamofire (~> 4.0)
   - EZLoadingActivity (0.9)
+  - JTMaterialSwitch (1.1)
   - OAuthSwift (1.0.0)
   - Realm (2.0.2):
     - Realm/Headers (= 2.0.2)
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.1)
   - AlamofireNetworkActivityIndicator (~> 2.0)
   - EZLoadingActivity
+  - JTMaterialSwitch
   - OAuthSwift (~> 1.0.0)
   - RealmSwift
   - RxCocoa (= 3.0.0-rc.1)
@@ -32,6 +34,7 @@ SPEC CHECKSUMS:
   AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
   AlamofireNetworkActivityIndicator: 3e55069ada3e1ff7703665156429eedcdfea0bc1
   EZLoadingActivity: 7ebb84c1f2510a62d2bc0a17cc9d75634f92606d
+  JTMaterialSwitch: cad8093c3773ff9f6c60005c98d269eb869b5e04
   OAuthSwift: dd4f502ffd4f6e122b861b5e4529bf6454a30fe6
   Realm: 0f5a194af0b7e6158b83db41b4ee1a00be7ddf1a
   RealmSwift: 0eb5070d851cba7c66e841ca756d83609dc78bc8
@@ -39,6 +42,6 @@ SPEC CHECKSUMS:
   RxSwift: d7a3819dd71789c473e3cbf1a0c02d58b2692739
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
 
-PODFILE CHECKSUM: c99d3fe00638cb2545d9a5a53f9ffd9a1243dc6b
+PODFILE CHECKSUM: 7d9fd634a56d7b0664f8536f45e41f8f384f4759
 
 COCOAPODS: 1.1.1

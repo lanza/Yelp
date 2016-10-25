@@ -16,6 +16,9 @@ target 'Yelp' do
   pod 'EZLoadingActivity'
 
   pod 'OAuthSwift', '~> 1.0.0'
+ 
+  pod 'JTMaterialSwitch' 
+
 end
 
 post_install do |installer|
